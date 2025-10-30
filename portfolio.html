@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Faiq Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="nav-brand">
+                    <a href="index.html" class="logo">Faiq<span> Developer</span></a>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li class="nav-item theme-toggle-container">
+                        <button id="theme-toggle" class="theme-toggle">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>My Portfolio</h1>
+            <p>A showcase of my recent projects and client work</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Filter -->
+    <section class="portfolio-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+                <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+                <button class="filter-btn" data-filter="design">UI/UX Design</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="portfolio-full">
+        <div class="container">
+            <div class="portfolio-grid-full">
+                <!-- Project 1 -->
+                <div class="portfolio-item-full" data-category="web">
+                    <div class="portfolio-image-full">
+                        <img src="Images/1.png" alt="Modern E-Commerce Website">
+                        <div class="portfolio-overlay-full">
+                            <div class="portfolio-info-full">
+                                <h3>EcoBite</h3>
+                                <p>Healthy Eating, Made Simple.
+                                    Organic snacks and meal kits delivered to your door</p>
+                                <div class="portfolio-actions">
+                                    <a href="#" class="btn btn-small">View Details</a>
+                                    <a href="https://eco-bite-healthy-eating-website-tem.vercel.app/"
+                                        class="btn btn-small btn-outline">Live Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>EcoBite</h3>
+                        <p>Healthy Eating, Made Simple.
+                            Organic snacks and meal kits delivered to your door</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">Stripe</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="portfolio-item-full" data-category="web">
+                    <div class="portfolio-image-full">
+                        <img src="Images/2.png" alt="Corporate Website">
+                        <div class="portfolio-overlay-full">
+                            <div class="portfolio-info-full">
+                                <h3>Nexahub Digital</h3>
+                                <p>We create stunning digital experiences that drive growth and engagement for your
+                                    business.</p>
+                                <div class="portfolio-actions">
+                                    <a href="#" class="btn btn-small">View Details</a>
+                                    <a href="https://nexahub-digital.vercel.app/" class="btn btn-small btn-outline">Live
+                                        Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Nexahub Digital</h3>
+                        <p>We create stunning digital experiences that drive growth and engagement for your
+                            business.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="portfolio-item-full" data-category="mobile">
+                    <div class="portfolio-image-full">
+                        <img src="Images/3.png" alt="Mobile App Dashboard">
+                        <div class="portfolio-overlay-full">
+                            <div class="portfolio-info-full">
+                                <h3>SavoryBites</h3>
+                                <p>Experience Culinary Excellence
+                                    Where every dish tells a story</p>
+                                <div class="portfolio-actions">
+                                    <a href="#" class="btn btn-small">View Details</a>
+                                    <a href="https://restaurant-website-template-beta.vercel.app/"
+                                        class="btn btn-small btn-outline">Live Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>SavoryBites</h3>
+                        <p>Experience Culinary Excellence
+                            Where every dish tells a story</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">React Native</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">Chart.js</span>
+                            <span class="tag">REST API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="portfolio-item-full" data-category="ecommerce">
+                    <div class="portfolio-image-full">
+                        <img src="Images/4.png" alt="Online Fashion Store">
+                        <div class="portfolio-overlay-full">
+                            <div class="portfolio-info-full">
+                                <h3>Picktrailer</h3>
+                                <p>Find the Perfect Trailer for Your Needs
+                                    Affordable, reliable, and ready when you are.</p>
+                                <div class="portfolio-actions">
+                                    <a href="#" class="btn btn-small">View Details</a>
+                                    <a href="https://picktrailer.vercel.app/" class="btn btn-small btn-outline">Live
+                                        Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Picktrailer</h3>
+                        <p>Find the Perfect Trailer for Your Needs
+                            Affordable, reliable, and ready when you are.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">WordPress</span>
+                            <span class="tag">WooCommerce</span>
+                            <span class="tag">PHP</span>
+                            <span class="tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="portfolio-item-full" data-category="design">
+                    <div class="portfolio-image-full">
+                        <img src="Images/5.png" alt="UI/UX Design System">
+                        <div class="portfolio-overlay-full">
+                            <div class="portfolio-info-full">
+                                <h3>AutoFixPro</h3>
+                                <p>Professional Car Repair Services
+                                    Quality auto repairs with a 12-month warranty on all services</p>
+                                <div class="portfolio-actions">
+                                    <a href="#" class="btn btn-small">View Details</a>
+                                    <a href="https://auto-fix-pro-seven.vercel.app/"
+                                        class="btn btn-small btn-outline">Live Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>AutoFixPro</h3>
+                        <p>Professional Car Repair Services
+                            Quality auto repairs with a 12-month warranty on all services</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Figma</span>
+                            <span class="tag">Adobe XD</span>
+                            <span class="tag">UI Design</span>
+                            <span class="tag">UX Research</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="portfolio-item-full" data-category="web">
+                    <div class="portfolio-image-full">
+                        <img src="Images/7.png"
+                            alt="Travel Blog Platform">
+                        <div class="portfolio-overlay-full">
+                            <div class="portfolio-info-full">
+                                <h3>DNBC News</h3>
+                                <p>DNBC News is a modern, responsive news platform delivering the latest headlines from around the world — covering politics, business, sports and more.</p>
+                                <div class="portfolio-actions">
+                                    <a href="#" class="btn btn-small">View Details</a>
+                                    <a href="https://news-website-project-alpha.vercel.app/" class="btn btn-small btn-outline">Live Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>DNBC News</h3>
+                        <p>DNBC News is a modern, responsive news platform delivering the latest headlines from around the world — covering politics, business, sports and more. With a clean, user-friendly layout and up-to-minute updates, it keeps readers informed and engaged no matter where they are.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">Express</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">JWT</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Client Testimonials</h2>
+                <p class="section-subtitle">What my clients say about working with me</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Faiq delivered an exceptional website that exceeded our expectations. His attention to
+                            detail and communication throughout the project was outstanding."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg"
+                                alt="Sarah Johnson">
+                        </div>
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>CEO, TechSolutions Inc.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Working with Faiq was a pleasure. He transformed our outdated website into a modern,
+                            responsive platform that has significantly increased our online conversions."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+                                alt="Michael Chen">
+                        </div>
+                        <div class="author-info">
+                            <h4>Michael Chen</h4>
+                            <p>Marketing Director, Global Retail</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Faiq's expertise in e-commerce development helped us launch our online store ahead of
+                            schedule. The site is fast, user-friendly, and has already driven significant sales."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
+                                alt="Emily Rodriguez">
+                        </div>
+                        <div class="author-info">
+                            <h4>Emily Rodriguez</h4>
+                            <p>Founder, FashionForward</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Have a Project in Mind?</h2>
+                <p>Let's discuss how we can bring your ideas to life with a custom web solution.</p>
+                <a href="contact.html" class="btn btn-primary">Start Your Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Faiq Developer</h3>
+                    <p>Creating modern, responsive websites and applications that help businesses grow in the digital
+                        world.</p>
+                    <div class="social-links">
+                        <a href="https://github.com/FaiqAnsari05"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/muhammad-faiq-4a73131a0/"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/faiqanxari05"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/faiqanxari_05/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">E-Commerce</a></li>
+                        <li><a href="services.html">Responsive Design</a></li>
+                        <li><a href="services.html">SEO Optimization</a></li>
+                        <li><a href="services.html">Website Maintenance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                       <li><i class="fas fa-envelope"></i>muhammadfaiq5555@gmail.com
+                        </li>
+                        <li><i class="fas fa-phone"></i> +923363941478</li>
+                        <li><i class="fas fa-map-marker-alt"></i>Pakistan</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Faiq Developer. All Rights Reserved. | <a href="privacy policy.html">Privacy Policy</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/923363941478" target="_blank" class="whatsapp-link">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+
+    <style>
+        /* Additional styles for portfolio page */
+        .page-header {
+            padding: 150px 0 80px;
+            background-color: var(--bg-secondary);
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .page-header p {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .portfolio-filter {
+            padding: 50px 0;
+            background-color: var(--bg-color);
+        }
+
+        .filter-buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .filter-btn {
+            padding: 10px 20px;
+            background-color: transparent;
+            border: 2px solid var(--border-color);
+            border-radius: 50px;
+            color: var(--text-color);
+            cursor: pointer;
+            transition: var(--transition);
+            font-weight: 500;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            color: white;
+        }
+
+        .portfolio-full {
+            padding: 80px 0;
+        }
+
+        .portfolio-grid-full {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 40px;
+        }
+
+        .portfolio-item-full {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .portfolio-item-full:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .portfolio-image-full {
+            position: relative;
+            overflow: hidden;
+            height: 250px;
+        }
+
+        .portfolio-image-full img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .portfolio-item-full:hover .portfolio-image-full img {
+            transform: scale(1.1);
+        }
+
+        .portfolio-overlay-full {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .portfolio-item-full:hover .portfolio-overlay-full {
+            opacity: 1;
+        }
+
+        .portfolio-info-full {
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .portfolio-info-full h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .portfolio-info-full p {
+            margin-bottom: 20px;
+            color: #ddd;
+        }
+
+        .portfolio-actions {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .portfolio-content {
+            padding: 25px;
+        }
+
+        .portfolio-content h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+
+        .portfolio-content p {
+            color: var(--text-light);
+            margin-bottom: 15px;
+        }
+
+        .portfolio-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tag {
+            background-color: var(--bg-secondary);
+            color: var(--text-color);
+            padding: 5px 12px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .testimonials {
+            padding: 100px 0;
+            background-color: var(--bg-secondary);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .testimonial-card {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
+        }
+
+        .testimonial-content {
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        .testimonial-content p {
+            font-style: italic;
+            color: var(--text-color);
+        }
+
+        .testimonial-content::before {
+            content: '"';
+            font-size: 4rem;
+            color: var(--primary-color);
+            opacity: 0.2;
+            position: absolute;
+            top: -20px;
+            left: -10px;
+            line-height: 1;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .author-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .author-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .author-info h4 {
+            margin-bottom: 5px;
+        }
+
+        .author-info p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .page-header h1 {
+                font-size: 2.5rem;
+            }
+
+            .filter-buttons {
+                justify-content: flex-start;
+            }
+
+            .portfolio-grid-full {
+                grid-template-columns: 1fr;
+            }
+
+            .portfolio-actions {
+                flex-direction: column;
+            }
+        }
+    </style>
+
+    <script>
+        // Portfolio Filter Functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const portfolioItems = document.querySelectorAll('.portfolio-item-full');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+
+                    // Add active class to clicked button
+                    this.classList.add('active');
+
+                    const filterValue = this.getAttribute('data-filter');
+
+                    portfolioItems.forEach(item => {
+                        if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                            item.style.display = 'block';
+                            setTimeout(() => {
+                                item.style.opacity = '1';
+                                item.style.transform = 'translateY(0)';
+                            }, 100);
+                        } else {
+                            item.style.opacity = '0';
+                            item.style.transform = 'translateY(20px)';
+                            setTimeout(() => {
+                                item.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
