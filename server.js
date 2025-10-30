@@ -33,13 +33,13 @@ mongoose.connect(MONGODB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
-.then(() => {
-    console.log('✅ Connected to MongoDB successfully!');
-})
-.catch(err => {
-    console.error('❌ MongoDB connection error:', err.message);
-    console.log('💡 Using in-memory storage as fallback...');
-});
+    .then(() => {
+        console.log('✅ Connected to MongoDB successfully!');
+    })
+    .catch(err => {
+        console.error('❌ MongoDB connection error:', err.message);
+        console.log('💡 Using in-memory storage as fallback...');
+    });
 
 // Contact Schema
 const contactSchema = new mongoose.Schema({
@@ -60,9 +60,9 @@ let fallbackId = 1;
 // TEST endpoint
 app.get('/api/test', async (req, res) => {
     const dbStatus = mongoose.connection.readyState === 1 ? 'Connected' : 'Disconnected';
-    
-    res.json({ 
-        success: true, 
+
+    res.json({
+        success: true,
         message: `Server working! MongoDB: ${dbStatus}`,
         time: new Date().toLocaleString()
     });
@@ -71,15 +71,15 @@ app.get('/api/test', async (req, res) => {
 // CONTACT endpoint with MongoDB
 app.post('/api/contact', async (req, res) => {
     console.log('📨 Contact form received:', req.body);
-    
+
     try {
         const { name, email, subject, budget, message } = req.body;
-        
+
         // Validation
         if (!name || !email || !message) {
-            return res.json({ 
-                success: false, 
-                message: 'Please fill in name, email, and message.' 
+            return res.json({
+                success: false,
+                message: 'Please fill in name, email, and message.'
             });
         }
 
@@ -96,9 +96,9 @@ app.post('/api/contact', async (req, res) => {
 
             await newContact.save();
             console.log('✅ Contact saved to MongoDB!');
-            
-            res.json({ 
-                success: true, 
+
+            res.json({
+                success: true,
                 message: '🎉 Thank you! Your message has been saved to database!',
                 storage: 'mongodb'
             });
@@ -117,19 +117,19 @@ app.post('/api/contact', async (req, res) => {
 
             fallbackContacts.push(fallbackContact);
             console.log('⚠️ Contact saved to memory (MongoDB not available)');
-            
-            res.json({ 
-                success: true, 
+
+            res.json({
+                success: true,
                 message: '🎉 Thank you! Your message has been sent! (Using temporary storage)',
                 storage: 'memory'
             });
         }
-        
+
     } catch (error) {
         console.error('❌ Error saving contact:', error);
-        res.json({ 
-            success: false, 
-            message: 'Sorry, there was an error. Please try again.' 
+        res.json({
+            success: false,
+            message: 'Sorry, there was an error. Please try again.'
         });
     }
 });
