@@ -92,3 +92,15 @@ app.listen(PORT, () => {
   console.log(`📧 Contact: http://localhost:${PORT}/contact`);
   console.log(`🏠 Home: http://localhost:${PORT}`);
 });
+
+        // server.js mein existing code ke saath yeh ADD KARE
+
+// Favicon route - ADD THIS
+app.get('/favicon.ico', (req, res) => {
+  res.status(204).end(); // No content
+});
+
+// Ya fir blank favicon serve kare
+app.get('/favicon.ico', (req, res) => {
+  res.sendFile(path.join(__dirname, 'favicon.ico'));
+});
