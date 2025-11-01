@@ -884,3 +884,8 @@ footer {
     border-color: #ff4757;
     box-shadow: 0 0 0 2px rgba(255, 71, 87, 0.1);
 }
+
+/* Add to style.css to hide server status */
+.server-status-section {
+    display: none !important;
+}
