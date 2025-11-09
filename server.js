@@ -265,8 +265,4 @@ if (process.env.VERCEL) {
     await connectDB();
     console.log(`📍 Server running on http://localhost:${PORT}`);
   });
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 105e4de6db2d32f46b273636aa6bf7b8c79cacab

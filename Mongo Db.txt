@@ -1,0 +1,6 @@
+
+MongoDb 
+
+Username:  muhammadfaiq5555_db_user
+Password:  UXpL76Ril9xqUcov 
+Connection string: mongodb+srv://muhammadfaiq5555_db_user:UXpL76Ril9xqUcov@cluster0.bvt5lkt.mongodb.net/?appName=Cluster0
